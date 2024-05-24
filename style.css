@@ -1,0 +1,192 @@
+*{   /* 有些標籤原有padding、magrin，所以要歸零 */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: DFkai-sb,sans-serif;  /* 設定字體 */
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: normal;  /* 原本都有粗體，改為不要粗體 */
+}
+
+
+header div.top{
+    padding: 1rem;
+    background-image: url(./images/background.png);
+   
+}
+
+header div.top h1{
+    font-size: 2.5rem;
+}
+
+header div.top h3{
+    font-size: 1rem;
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;   /* 去除點點 */
+}
+
+header nav ul li{
+    padding: 1.2rem 1.5rem;
+}   
+header nav{
+    background-color: black;
+}
+
+header nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 1s ease;
+}
+
+.active{
+    color: yellow;
+}
+
+header nav ul li  :hover {
+    color: yellow;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main section{
+    padding: 1rem;
+}
+
+main section.left{
+    flex: 1 1 200px;
+}
+main section.right{
+    flex: 4 1 500px;
+}
+
+main section figure img{
+    width: 90%;
+}
+
+section.left h3{
+    margin-bottom: 1rem;
+}
+
+section.left table{
+    margin-top: 1rem;
+}
+
+section.left table,section.left td{
+    padding: 0.25rem;
+}
+
+section.right h3{
+    font-size: 1.25rem;
+    padding-top: 0.25rem;
+}
+
+p{  /* 希望所有p都一樣，所以把section刪除 */
+    padding: 0.5rem 0rem;
+    
+} 
+
+section.right ul{
+    padding-left: 2rem;
+}
+
+.korea-main{
+    display: block;
+}
+
+.korea-main section div{
+    margin: 2rem;
+    border: 3px solid burlywood;
+    padding: 1rem;
+
+}
+.korea-main section h4{
+    font-size: 1.5rem;
+    color:rgb(0, 90, 91);
+}
+
+.korea-main section h5{
+    font-size: 1.05rem;
+    color:rgb(6, 120, 120);
+}
+
+.japan{
+    display: flex;
+    flex-wrap: wrap;  
+    padding: 1rem;
+}
+
+.japan-image{
+    flex: 1 1 300px;
+    display: flex;
+    align-items: center;
+}
+
+.japan-image img{
+    width: 90%;
+}
+
+.japan-text{
+    flex: 3 1 600px;
+    padding: 2rem;
+}
+
+.japan02{
+    display: flex;
+    flex-wrap: wrap;  
+    padding: 1rem;
+}
+
+#piechart{ 
+    flex: 1 1 300px;
+}
+
+.japan-text02{
+    flex: 5 1 300px;
+}
+
+.china-main{
+   display: flex;
+   flex-direction: column;
+}
+
+.china-main table{
+    min-width: 1000px;
+}
+
+.china-main th ,
+.china-main td {
+    padding: 2px 4px;
+}
+
+
+.china-main th {
+    color: white;
+    background-color: rgb(50, 191, 153);
+}
+
+.taiwan-main{
+    display: flex;
+    flex-direction: column;
+}
+
+.taiwan-main p{
+    padding-bottom: 1.0rem;
+}
+
+.taiwan-main ul  {
+    padding-left: 2rem;
+}
+
+@media screen and (max-width:800px) {
+    header nav ul{
+        flex-direction: column;
+    }
+}
